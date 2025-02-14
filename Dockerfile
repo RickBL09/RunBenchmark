@@ -2,12 +2,11 @@ FROM docker:latest
 
 WORKDIR /app
 
-RUN apk add --no-cache git
+RUN apk add --no-cache git bash
 
 RUN git clone https://github.com/sbm895/dockerBenchmark.git /app/codes
 
-WORKDIR /app/codes
+COPY run_benchmark.sh /app/run_benchmark.sh
+RUN chmod +x /app/run_benchmark.sh
 
-RUN chmod +x run.sh
-
-CMD ["./run.sh"]
+CMD ["/bin/bash", "/app/run_benchmark.sh"]
