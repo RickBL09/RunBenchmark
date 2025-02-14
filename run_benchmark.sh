@@ -3,7 +3,7 @@ echo "====================================="
 echo "    EJECUTANDO BENCHMARK"
 echo "====================================="
 
-languages=("openjdk" "node" "python" "gcc" "dotnet")
+languages=("java" "javascript" "python" "c" "csharp")
 
 for lang in "${languages[@]}"; do
     echo ""
