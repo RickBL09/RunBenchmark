@@ -11,10 +11,10 @@ for lang in "${languages[@]}"; do
     
     cd /app/codes/$lang
     
-    docker build -t benchmark-$lang . > /dev/null 2>&1
+    docker build -t benchmark-$lang .
     echo "Contenedor $lang construido."
 
-    time=$(docker run --rm $lang)
+    time=$(docker run --rm benchmark-$lang)
     
     echo "Tiempo de ejecución en $lang: ${time} ms"
     
