@@ -10,4 +10,4 @@ WORKDIR /app/codes
 
 RUN chmod +x run.sh
 
-CMD ["/app/run.sh"]
+CMD ["./run.sh"]
