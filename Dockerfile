@@ -8,6 +8,6 @@ RUN git clone https://github.com/sbm895/dockerBenchmark.git /app/codes
 
 WORKDIR /app/codes
 
-RUN chmod +x /app/run.sh
+RUN chmod +x run.sh
 
 CMD ["/app/run.sh"]
