@@ -5,7 +5,7 @@ echo "====================================="
 languages=("java" "javascript" "python" "c" "go")
 
 # Imprimir cabecera de la tabla
-echo -e "Lenguaje\t\tTiempo de ejecución (ms)"
+echo -e "Lenguaje\t\tTiempo de ejecución"
 
 for lang in "${languages[@]}"; do
     echo ""
