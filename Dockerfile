@@ -1,4 +1,4 @@
-FROM docker:latest  
+FROM docker:dind  
 
 WORKDIR /app
 
